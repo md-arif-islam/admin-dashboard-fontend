@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Dashboard</title>
 </head>
@@ -21,7 +22,7 @@
             <div id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
-            <span class="topber__title--text">Dashboard</span>
+            <span class="topber__title--text">Members</span>
         </div>
 
         <div class="topber__profile">
@@ -49,7 +50,7 @@
         </div>
         <ul class="sideber__ber">
             <h3 class="sideber__panel"><i class="fas fa-laugh-wink"></i> Panel</h3>
-            <li class="sideber__item active">
+            <li class="sideber__item ">
                 <a href="index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
             </li>
             <li class="sideber__item">
@@ -64,7 +65,7 @@
             <li class="sideber__item">
                 <a href="add-member.html"><i class="fas fa-user-plus"></i>Add Member</a>
             </li>
-            <li class="sideber__item ">
+            <li class="sideber__item active">
                 <a href="settings.html"><i class="fas fa-cogs"></i>Settings</a>
             </li>
             <li class="sideber__item sideber__item--modify">
@@ -79,68 +80,58 @@
     <!--------------------------------- Main section -------------------------------->
     <section class="main">
         <div class="container">
-            <span class="main__title">Your Current Plan :</span>
-            <h4 class="main__header">Single Registration <a href="">Upgrade Plan</a></h4>
-            <span class="main__title">Your Documents :</span>
+            <span class="main__title">Update Profile : </span>
+            <div class="main__form">
+                <div class="main__form--title text-center">Edit Profile</div>
+                <form action="">
+                    <div class="form-row">
+                        <div class="col col-12">
+                            <label class="input">
+                                <i class="fas fa-user-circle"></i>
+                                <input type="text" placeholder="First name">
+                            </label>
+                        </div>
+                        <div class="col col-12">
+                            <label class="input">
+                                <i class="fas fa-user-circle"></i>
+                                <input type="text" placeholder="Last Name">
+                            </label>
+                        </div>
+                        <div class="col col-12">
+                            <label class="input">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Email">
+                            </label>
+                        </div>
+                        <div class="col col-12">
+                            <label class="input">
+                                <i class="fas fa-phone-alt"></i>
+                                <input type="text" placeholder="Phone">
+                            </label>
+                        </div>
+                        <div class="col col-12">
+                            <label class="input">
+                                <i class="fas fa-birthday-cake"></i>
+                                <input type="date" placeholder="Birthday">
+                            </label>
+                        </div>
+                        <div class="col col-12">
+                            <label class="input">
+                                <i class="fas fa-male"></i>
+                                <select name="Gender" id="gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Consider not to say">Consider Not to Say</option>
+                                </select>
+                            </label>
+                        </div>
 
-            <div class="main__documents document">
-                <div class="document__box">
-                    <div class="document__img">
-                        <img src="./assets/img/15834.jpg" alt="">
+                        <div class="col col-12">
+                            <button>Update</button>
+                        </div>
                     </div>
-                    <div class="document__desc">
-                        <h3>MD Arif Islam</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="document__button">
-                        <a class="document__button--one" href="">View</a>
-                        <a class="document__button--two" href="">Download</a>
-                    </div>
-                </div>
-
-                <div class="document__box">
-                    <div class="document__img">
-                        <img src="./assets/img/16071.jpg" alt="">
-                    </div>
-                    <div class="document__desc">
-                        <h3>MD Arif Islam</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="document__button">
-                        <a class="document__button--one" href="">View</a>
-                        <a class="document__button--two" href="">Download</a>
-                    </div>
-                </div>
-
-                <div class="document__box">
-                    <div class="document__img">
-                        <img src="./assets/img/16074.jpg" alt="">
-                    </div>
-                    <div class="document__desc">
-                        <h3>MD Arif Islam</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="document__button">
-                        <a class="document__button--one" href="">View</a>
-                        <a class="document__button--two" href="">Download</a>
-                    </div>
-                </div>
-
-                <div class="document__box">
-                    <div class="document__img">
-                        <img src="./assets/img/16080.jpg" alt="">
-                    </div>
-                    <div class="document__desc">
-                        <h3>MD Arif Islam</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="document__button">
-                        <a class="document__button--one" href="">View</a>
-                        <a class="document__button--two" href="">Download</a>
-                    </div>
-                </div>
+                </form>
             </div>
-
         </div>
     </section>
 
